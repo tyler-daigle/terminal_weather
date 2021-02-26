@@ -32,7 +32,7 @@ const chalk = require("chalk");
     };
   });
 
-  console.log(chalk.magenta(`\nLast Updated: ${weatherData.lastUpdated}\n\n`)); 
+  console.log(chalk.bgRed.black(`\nLast Updated: ${weatherData.lastUpdated}\n\n`)); 
   insertStars();
   console.log("\n",chalk.cyan(weatherData.forecast), "\n");
   insertStars();
